@@ -9,7 +9,7 @@ from data.users import User
 from data.films import Film
 from data import db_session
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='docs'))
 login_manager = LoginManager()
 login_manager.init_app(app)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
